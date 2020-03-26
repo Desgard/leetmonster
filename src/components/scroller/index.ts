@@ -1,1 +1,1 @@
-export { Scroller } from "./component";
+export { Scripter } from "./component";

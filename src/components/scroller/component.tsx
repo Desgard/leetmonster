@@ -1,29 +1,34 @@
 import React, { FunctionComponent } from "react";
 import "./styles.scss";
-import { executeScript } from "@src/utils/executeScript";
+import { executeScript } from "@src/utils/execute-script";
 
-// // // //
+const commands = [
+  // {
+  //   name: "Scroll To Top",
+  //   script: `window.scroll(0,0)`,
+  // },
+  // {
+  //   name: "Scroll To Bottom",
+  //   script: "window.scroll(0,9999999)",
+  // },
+  {
+    name: "Copy Test Case",
+    script: `alert("hello leetcode")`,
+  },
+];
 
-// Scripts to execute in current tab
-const scrollToTopScript = `window.scroll(0,0)`;
-const scrollToBottomScript = `window.scroll(0,9999999)`;
-
-export const Scroller: FunctionComponent = () => {
+export const Scripter: FunctionComponent = () => {
   return (
     <div className="row">
       <div className="col-lg-12">
-        <button
-          className="btn btn-block btn-outline-dark"
-          onClick={(): void => executeScript(scrollToTopScript)}
-        >
-          Scroll To Top
-        </button>
-        <button
-          className="btn btn-block btn-outline-dark"
-          onClick={(): void => executeScript(scrollToBottomScript)}
-        >
-          Scroll To Bottom
-        </button>
+        {commands.map(info => (
+          <button
+            className="btn btn-block btn-outline-dark"
+            onClick={(): void => executeScript(info.script)}
+          >
+            {info.name}
+          </button>
+        ))}
       </div>
     </div>
   );
