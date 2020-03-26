@@ -6,9 +6,9 @@ import { Story } from "@src/components/dev";
 // // // //
 
 storiesOf("Scroller", module).add("renders", () => {
-    return (
-        <Story>
-            <Scroller />
-        </Story>
-    );
+  return (
+    <Story>
+      <Scroller />
+    </Story>
+  );
 });

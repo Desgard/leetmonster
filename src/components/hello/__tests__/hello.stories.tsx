@@ -6,9 +6,9 @@ import { Story } from "@src/components/dev";
 // // // //
 
 storiesOf("Hello", module).add("renders", () => {
-    return (
-        <Story>
-            <Hello />
-        </Story>
-    );
+  return (
+    <Story>
+      <Hello />
+    </Story>
+  );
 });
