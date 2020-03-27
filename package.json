@@ -40,6 +40,7 @@
         "@storybook/addons": "^5.2.8",
         "@storybook/preset-typescript": "^1.2.0",
         "@storybook/react": "^5.2.8",
+        "@types/cheerio": "^0.22.17",
         "@types/chrome": "^0.0.91",
         "@types/jest": "^24.0.25",
         "@types/node": "^13.1.2",
@@ -75,7 +76,9 @@
         "webpack-merge": "^4.2.2"
     },
     "dependencies": {
+        "@types/jquery": "^3.3.34",
         "bootstrap": "^4.4.1",
+        "jquery": "^3.4.1",
         "mobx": "^5.15.4",
         "mobx-react-lite": "^1.5.2",
         "react": "^16.12.0",
