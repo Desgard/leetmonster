@@ -3,14 +3,6 @@ import "./styles.scss";
 import { executeScript } from "@src/utils/execute-script";
 
 const commands = [
-  // {
-  //   name: "Scroll To Top",
-  //   script: `window.scroll(0,0)`,
-  // },
-  // {
-  //   name: "Scroll To Bottom",
-  //   script: "window.scroll(0,9999999)",
-  // },
   {
     name: "Copy Test Case",
     script: `alert("hello leetcode")`,
@@ -25,6 +17,7 @@ export const Scripter: FunctionComponent = () => {
           <button
             className="btn btn-block btn-outline-dark"
             onClick={(): void => executeScript(info.script)}
+            key={`Scripter-${info.name}`}
           >
             {info.name}
           </button>

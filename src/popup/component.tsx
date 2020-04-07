@@ -3,17 +3,15 @@ import { observer } from "mobx-react-lite";
 import { Title } from "@src/components/title";
 import { browser } from "webextension-polyfill-ts";
 import { Scripter } from "@src/components/scroller";
-import MonsterStore from "@src/store/monster-store";
 import "./styles.scss";
 
-interface IPopupProps {}
 
-export const Popup: React.SFC<IPopupProps> = observer(props => {
+export const Popup: React.FunctionComponent = () => {
   React.useEffect(() => {
     browser.runtime.sendMessage({ popupMounted: true });
   }, []);
 
-  const monsterStore = useContext(MonsterStore);
+  // const monsterStore = useContext(MonsterStore);
 
   return (
     <div className="popup-container">
@@ -21,8 +19,8 @@ export const Popup: React.SFC<IPopupProps> = observer(props => {
         <Title />
         <hr />
         <Scripter />
-        {monsterStore.html}
+        {/* {monsterStore.html} */}
       </div>
     </div>
   );
-});
+}

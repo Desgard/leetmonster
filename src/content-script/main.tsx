@@ -18,6 +18,7 @@ const checkInterval = setInterval(() => {
 
   // 获取数据
   const testcaseResult = fetchNewTestcase();
+  console.log("获取样例", testcaseResult);
   let testcaseCount = 0;
   const testcaseRunner: { (): void } = () => {
     const current = testcaseResult[testcaseCount];

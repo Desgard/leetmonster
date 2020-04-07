@@ -81,6 +81,7 @@
         "jquery": "^3.4.1",
         "mobx": "^5.15.4",
         "mobx-react-lite": "^1.5.2",
+        "obelisk.js": "^1.2.2",
         "react": "^16.12.0",
         "react-dom": "^16.12.0",
         "react-test-renderer": "^16.12.0"
