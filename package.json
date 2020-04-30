@@ -78,7 +78,7 @@
     "dependencies": {
         "@types/jquery": "^3.3.34",
         "bootstrap": "^4.4.1",
-        "jquery": "^3.4.1",
+        "jquery": "^3.5.0",
         "mobx": "^5.15.4",
         "mobx-react-lite": "^1.5.2",
         "obelisk.js": "^1.2.2",
